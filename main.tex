@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
 
 \title{Existing Spoken Open Source Corpora for the Spanish Language}
 \author{Mauricio Collazos}
@@ -16,7 +17,60 @@ Many aspects of speech technologies relies on availability of language resources
 Open-sourced speech resources for the spanish language are studied in this chapter, analysing speakers, lenght, recording conditions, source of language, dialect, format, annotation level and suggested usage.
 
 
+\section{Preamble}
+
+Table \ref{tab:resources_by_langauge} shows the amount of resources published by the Linguistic Data Consortium LDC and European Language Resources Association ELRA, noting the difference in availability of resourcer for the top 5 spoken languages in the world. This resources are both open sourced and licenced.
 
 
+\begin{table}[h]
+\caption{ASR Corpora for the top five spoken languages in the world \cite{HernndezMena2017}}
+\label{tab:resources_by_langauge}
+\begin{tabular}{llll}
+Rank & Language & LDC & ELRA \\
+1    & Mandarin & 24  & 6    \\
+2    & English  & 116 & 23   \\
+3    & Spanish  & 20  & 20   \\
+4    & Hindi    & 9   & 4    \\
+5    & Arabic   & 10  & 32  
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[ht]
+\caption{List of Open Source Spanish Corpora}
+\label{tab:open_source_spanish_corpus}
+\begin{tabular}{llllllll}
+\textbf{Resource name} & \textbf{Licence}  & \multicolumn{1}{p{2cm}}{\textbf{Annotation Level}} & \textbf{Length} & \multicolumn{1}{p{2cm}}{\textbf{Recording Conditions}} & \textbf{Accents} & \textbf{Source} &  \multicolumn{1}{p{2cm}}{\textbf{Publishing Date}}\\
+
+{DIMEx100}  & \multicolumn{1}{p{2cm}}
+            {Free for Academic Purposes}        & {Phonetic} & {5h} & {Studio} & {Mexican}                       & {Internet} & 2004 \\
+
+{CIEMPIESS}   & \multicolumn{1}{p{2cm}}
+             {CC-Share A like v4.0}            & {Word}     & {17h}  & {Studio} & {Mexican}                 & {Radio Program} & 2014 \\
+
+{Heroico}  & \multicolumn{1}{p{2cm}}
+{LDC User Agreement for Non-Members}              & {Uterance} & {13h}  & {Noisy}  & {Mexican}                  & \multicolumn{1}{p{2cm}}
+                                                                                                                 {High School Academic Textbooks} & 2006\\
+
+\multicolumn{1}{p{2cm}}
+{Google Language 
+Resources Latin American} & \multicolumn{1}{p{2cm}}
+                        {CC-Share A like v4.0}  & {Uterance} & {37h}  & {Studio} & \multicolumn{1}{p{2cm}}
+            {Argentinean, Chilean, Colombian, Peruvian, Puerto Rican, Venezuelan}       
+                                                                                                                &{Internet}   & 2020\\
+                                                                                                    
+{M-AILABS}  & \multicolumn{1}{p{2cm}}
+            {M-AILABS BSD License}               & {Uterance} & {108h} & {Noisy}  & \multicolumn{1}{p{2cm}}
+            {Peninsular, Mexican, Argentinian, Others} 
+                                                                                                                & {LibriVox} & 2019\\
+
+{Common Voice}  & {CC-0}                            & {Uterance} & {529h} & {Noisy}  &  \multicolumn{1}{p{2cm}}
+            {Peninsular, Mexican, Argentinian, Others}                                                          & {Internet} & 2020                      
+\end{tabular}
+\end{table}
+
+\bibliography{references_chapter_1.bib}
+\bibliographystyle{plain}
 
 \end{document}
