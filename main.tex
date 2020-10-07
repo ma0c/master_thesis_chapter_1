@@ -5,23 +5,51 @@
 \usepackage[utf8]{inputenc}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
 
-\title{Existing Spoken Open Source Corpora for the Spanish Language}
-\author{Mauricio Collazos}
-\date{August 2020}
+%%%%% COMMENTS %%%%%%%
+\usepackage{xcolor}
+\usepackage{soul}
+\newcommand{\macb}{\textcolor{red}}
+%%%%% COMMENTS %%%%%%%
+
+% \title{Existing Spoken Open Source Corpora for the Spanish Language}
+\title{Latin American Spanish: A Review of Open Source Spoken Corpora}
+\name{Mauricio Collazos}
+% You will need to add your affiliation (Universidad del Valle, Cali, Colombia)
+% The date is not need it in articles, that will be later added with the publication.
+
+\address{Universidad del Valle \\
+          Cali, Colombia \\
+         email@correounivalle.edu.co}
+
+
+ % some catchy summary of the document should go here, some key words might be added as well. 
+    
+    % Questions that should answer the abstract: 
+    % What is the bigger, more general field your article relates to?  What is the purpose of your article?  What methodology did you use? What are the key results? What are the practical implications of your research (how can the results be utilised by e.g. practitioners, society or companies)?
+    
+\abstract{
+Abstract \\ \newline \Keywords{Latin American Spanish, Open Source Corpora, Spoken Corpora} }
 
 \begin{document}
 
-\maketitle
+\maketitleabstract
+
 
 \section{Introduction}
 
-Many aspects of speech technologies relies on availability of language resources, for automatic speech recognition and speech synthesis large amounts of annotated data are required to generate acoustic models to recognize and generate voice signals. The Spanish language is one of the top five most spoken languages in the world, behind English and Manadrin, however availability of Open-Sourced speech resources are small compared with other languages like English.
+\macb{\st{Many aspects of s}S}peech technologies relies on \macb{\st{availability of}} language resources \macb{\st{,} used for training, where modern models are data-hungry.} \macb{\st{f}F}or \macb{example, in SoTA} automatic speech recognition and speech synthesis \macb{\st{large amounts of annotated data are required to generate acoustic models to recognize and generate voice signals.} systems such as [REF to state-of-the-art systems] were trained using more than x hours of spoken English. Additionally, some models require high-quality annotated data (e.g., [REF to model trained with annotated data]); however, manual annotations are typically costly and time-demanding. Despite the collective efforts for reducing the amount of annotated data (e.g., semi-supervised models [REF to semi-supervised models], or unsupervised models [REF]), those approaches require great amount of unannotated data instead. These drawbacks become more evident for languages different than English. Even for Spanish, one of the most spoken language in the world [REF], the resources are limited in size and variety, especially for annotated corpora.}
 
-Open-sourced speech resources for the spanish language are studied in this chapter, analysing speakers, lenght, recording conditions, source of language, dialect, format, annotation level and suggested usage.
 
+\macb{\st{The Spanish language is one of the top five most spoken languages in the world, behind English and Manadrin, however availability of Open-Sourced speech resources are small compared with other languages like English. Open-sourced speech resources for the spanish language are studied in this chapter, analysing speakers, lenght, recording conditions, source of language, dialect, format, annotation level and suggested usage.}}
+
+
+% Something that is missing is why to focus on Spanish resources, if you have English resources. Here I suggest a way to do it. You might adjust. 
+% Explain why is necessary to study the corpora available before developing a model (a sentence). Then talk about the dialectical variability and the impact of such into the use of speech technology (look for papers that explore this idea, probably multidisciplinary studies). Then provide some arguments why the spanish community should have a benchmark to compare their models. Now introduce what this review will be about, the contribution of the work, and what are the main aspects to be discussed throughout the review. 
+
+% The introduction should provide an overview of the problem to be discussed in the paper, what is the current state-of-the-art and in this case, the aspects to be evaluated in the review. References are needed, specially in this section! 
 
 \section{Preamble}
-
+% overrepresentation of English
 Table \ref{tab:resources_by_langauge} shows the amount of resources published by the Linguistic Data Consortium LDC and European Language Resources Association ELRA, noting the difference in availability of resourcer for the top 5 spoken languages in the world. This resources are both open sourced and licenced.
 
 
@@ -42,7 +70,7 @@ Rank & Language & LDC & ELRA \\
 
 Language Resources for the Spanish languages focused on speech technologies with open licenses and openly distributed over the web are mentioned in this section. A summary is presented in Table \ref{tab:open_source_spanish_corpus}
 
-\begin{table}[ht]
+\begin{table*}[ht]
 \caption{List of Open Source Spanish Corpora}
 \label{tab:open_source_spanish_corpus}
 \begin{tabular}{llllllll}
@@ -53,6 +81,21 @@ Language Resources for the Spanish languages focused on speech technologies with
 
 {CIEMPIESS}   & \multicolumn{1}{p{2cm}}
              {CC-Share A like v4.0}            & {Word}     & {17h}  & {Studio} & {Mexican}                 & {Radio Program} & 2014 \\
+\multicolumn{1}{p{2cm}}
+{CIEMPIESS LIGHT}   & \multicolumn{1}{p{2cm}}
+             {CC-Share A like v4.0}            & {Word}     & {18h}  & {Studio} & {Mexican}                 & {Radio Program} & 2016 \\
+\multicolumn{1}{p{2cm}}
+{CIEMPIESS BALANCE}   & \multicolumn{1}{p{2cm}}
+             {CC-Share A like v4.0}            & {Word}     & {18h}  & {Studio} & {Mexican}                 & {Radio Program} & 2018 \\
+\multicolumn{1}{p{2cm}}
+{CIEMPIESS EXP. - COMPLEMENTARY}   & \multicolumn{1}{p{2cm}}
+             {CC-Share A like v4.0}            & {Word}     & {1h}  & {Studio} & {Mexican}                 & {Radio Program} & 2018 \\
+\multicolumn{1}{p{2cm}}
+{CIEMPIESS EXP. - FEM}   & \multicolumn{1}{p{2cm}}
+             {CC-Share A like v4.0}            & {Word}     & {13h}  & {Studio} & {Mexican}                 & {Radio Program} & 2018 \\
+\multicolumn{1}{p{2cm}}
+{CIEMPIESS EXP. - TEST}   & \multicolumn{1}{p{2cm}}
+             {CC-Share A like v4.0}            & {Word}     & {8h}  & {Studio} & {Mexican}                 & {Radio Program} & 2018 \\
 
 {Heroico}  & \multicolumn{1}{p{2cm}}
 {LDC User Agreement for Non-Members}              & {Uterance} & {13h}  & {Noisy}  & {Mexican}                  & \multicolumn{1}{p{2cm}}
@@ -77,7 +120,7 @@ Resources Latin American} & \multicolumn{1}{p{2cm}}
 {LDC User Agreement for Non-Members}               & {Uterance} & {73h} & {Noisy}  &  \multicolumn{1}{p{2cm}}
             {Peninsular, Mexican, Argentinian, Others}                                                          & {Internet} & 2020       
 \end{tabular}
-\end{table}
+\end{table*}
 
 \subsection{DIMEx100}
 
@@ -94,6 +137,22 @@ Che Corpus de Investigación en Español de México del Posgrado de Ingeniería 
 Giving the radio program nature, this corpus contains continous speech and is gender unbalanced, with 77.86 male recordings and only 22.14 felame recordings. Full corpus has 16717 recordings as has a total lenght of 17 hours.
 
 Annotation process was done using MEXBET and tonic vowels, also all uterances are aligned by word
+
+\subsubsection{CIEMPIESS LIGHT}
+
+After two years of experimentation with the CIEMPIESS Corpus, a lot of feedback was received by the CIEMPIESS team and a newly version of the original corpus was released, changing the distribution format from SPH files to WAV files, also modifying some recordings and adding almost a new hour of audio. This new distribution is compatible with modern ASR tools like Kaldi and CMU Sphinx
+
+\subsubsection{CIEMPIESS BALANCE}
+
+Since the CIEMPIESS corpus is gender unbalanced, a newly created corpus from the same source was created to balance the CIEMPIESS LIGHT corpus to have together a combined gender balanced corpus. This corpus is composed by 18 hours and 20 minutes where 12 hours and 40 seconds are from female speakers and 5 hours and 40 minutes are from male speakers
+
+\subsubsection{CIEMPIESS EXPERIMENTATION}
+
+CIEMPIES EXPERIMENTATION are a set of three corpora designed for specific reasons, CIEMPIESS EXPERIMENTATION - COMPLEMENTARY is a phonetically balanced corpus for isolated words containing one hour of audio annotated using MEXBET
+
+CIEMPIESS EXPERIMENTATION - FEM is a corpus with onle female speakers, containing 13 hours and 54 minutes of recordings
+
+CIEMPIES EXPERIMENTATION - TEST is a gender balanced corpus designed to test speech applications, having a total of 8 hours and 8 minutes from recorddings by 10 felame speakers and 10 male speakers 4 hours and 4 minutes each
 
 \subsection{Heroico}
 
@@ -145,6 +204,9 @@ and the rest from non-native speakers.
 
 As this corpus is crowsourced, recordings have different quality, in most cases recordings were made in a quiet environment and using regular computer microphones
 
+\section{Applications}
+
+\section{Conclusions}
 
 \bibliography{references_chapter_1.bib}
 \bibliographystyle{plain}
