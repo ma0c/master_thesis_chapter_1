@@ -18,7 +18,7 @@
  {\bf \large Raúl Ernesto Gutiérrez de Piñerez Reyes$^{\ast}$}}
 
 \address{$^{\ast}$Escuela de Ingeniería en Sistemas y Computación, Universidad del Valle \\ 
-Calle 13 # 100-00, Cali, Colombia \\ 
+Calle 13 \# 100-00, Cali, Colombia \\ 
           {mauricio.collazos,raul.gutierrez}@correounivalle.edu.co \\
 $^{\dagger}$Speech and Cognition Research Group, Tampere University \\ 
 \textcolor{red} {Address3} \\ 
@@ -39,7 +39,7 @@ $^{\dagger}$Speech and Cognition Research Group, Tampere University \\
     % What is the bigger, more general field your article relates to?  What is the purpose of your article?  What methodology did you use? What are the key results? What are the practical implications of your research (how can the results be utilised by e.g. practitioners, society or companies)?
     
 \abstract{
-Abstract \\ \newline \Keywords{Latin American Spanish, Open Source Corpora, Spoken Corpora} }
+Research for Speech techonogies relies heavily in high quality and high volume language resources designed for specific languages. Open resources of this kind are low in comparison to other closed resources. The creation of high quality and high volume resources for speech recognition and speech synthesis is expensive, and researchers usually need to create custom datasets for their own investigation. For non-English languages, the resources are even scarced and the gap between English and non-English resources is huge. We present a compilation of open sourced language resources for Speech Tecnologies and the Spanish Language, describing each resource and proposing possibles applications for each corpus. \\ \newline \Keywords{Latin American Spanish, Open Source Corpora, Spoken Corpora} }
 
 \begin{document}
 
@@ -48,7 +48,7 @@ Abstract \\ \newline \Keywords{Latin American Spanish, Open Source Corpora, Spok
 
 \section{Introduction}
 
-Speech technologies relies on language resources used for training, where modern models are data-hungry For example, in SoTA automatic speech recognition and speech synthesis  systems such as [REF to state-of-the-art systems] were trained using more than x hours of spoken English. Additionally, some models require high-quality annotated data (e.g., [REF to model trained with annotated data]); however, manual annotations are typically costly and time-demanding. Despite the collective efforts for reducing the amount of annotated data (e.g., semi-supervised models [REF to semi-supervised models], or unsupervised models [REF]), those approaches require great amount of unannotated data instead. These drawbacks become more evident for languages different than English. Even for Spanish, one of the most spoken language in the world [REF], the resources are limited in size and variety, especially for annotated corpora.
+Speech technologies relies on language resources used for training, where modern models are data-hungry For example, in SoTA automatic speech recognition and speech synthesis  systems such as Listen Attend Speell by Google \cite{Chiu2018} were trained using more than 12500 hours of spoken English. Additionally, some models require high-quality annotated data (e.g., TIMIT \cite{TIMIT}, SwitchBoard \cite{Switchboard}); however, manual annotations are typically costly and time-demanding. Despite the collective efforts for reducing the amount of annotated data (e.g., semi-supervised models \cite{AmazonSemiSupervised}, or unsupervised models \cite{ZeroResources}), those approaches require great amount of unannotated data instead. These drawbacks become more evident for languages different than English. Even for Spanish, one of the most spoken language in the world \cite{HernndezMena2017}, the resources are limited in size and variety, especially for annotated corpora.
 
 
 
@@ -87,6 +87,9 @@ Language Resources for the Spanish languages focused on speech technologies with
 
 {DIMEx100}  & \multicolumn{1}{p{2cm}}
             {Free for Academic Purposes}        & {Phonetic} & {5h} & {Studio} & {Mexican}                       & {Internet} & 2004 \\
+{Heroico}  & \multicolumn{1}{p{2cm}}
+{LDC User Agreement for Non-Members}              & {Uterance} & {13h}  & {Noisy}  & {Mexican}                  & \multicolumn{1}{p{2cm}}
+                                                                                                                 {High School Academic Textbooks} & 2006\\
 
 {CIEMPIESS}   & \multicolumn{1}{p{2cm}}
              {CC-Share A like v4.0}            & {Word}     & {17h}  & {Studio} & {Mexican}                 & {Radio Program} & 2014 \\
@@ -106,10 +109,10 @@ Language Resources for the Spanish languages focused on speech technologies with
 {CIEMPIESS EXP. - TEST}   & \multicolumn{1}{p{2cm}}
              {CC-Share A like v4.0}            & {Word}     & {8h}  & {Studio} & {Mexican}                 & {Radio Program} & 2018 \\
 
-{Heroico}  & \multicolumn{1}{p{2cm}}
-{LDC User Agreement for Non-Members}              & {Uterance} & {13h}  & {Noisy}  & {Mexican}                  & \multicolumn{1}{p{2cm}}
-                                                                                                                 {High School Academic Textbooks} & 2006\\
-
+{M-AILABS}  & \multicolumn{1}{p{2cm}}
+            {M-AILABS BSD License}               & {Uterance} & {108h} & {Noisy}  & \multicolumn{1}{p{2cm}}
+            {Peninsular, Mexican, Argentinian, Others} 
+                                                                                                                & {LibriVox} & 2019\\
 \multicolumn{1}{p{2cm}}
 {Google Language 
 Resources Latin American} & \multicolumn{1}{p{2cm}}
@@ -117,10 +120,7 @@ Resources Latin American} & \multicolumn{1}{p{2cm}}
             {Argentinean, Chilean, Colombian, Peruvian, Puerto Rican, Venezuelan}       
                                                                                                                 &{Internet}   & 2020\\
                                                                                                     
-{M-AILABS}  & \multicolumn{1}{p{2cm}}
-            {M-AILABS BSD License}               & {Uterance} & {108h} & {Noisy}  & \multicolumn{1}{p{2cm}}
-            {Peninsular, Mexican, Argentinian, Others} 
-                                                                                                                & {LibriVox} & 2019\\
+
 
 {Common Voice}  & {CC-0}                            & {Uterance} & {529h} & {Noisy}  &  \multicolumn{1}{p{2cm}}
             {Peninsular, Mexican, Argentinian, Others}                                                          & {Internet} & 2020\\                 
