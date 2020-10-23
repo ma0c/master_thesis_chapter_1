@@ -50,16 +50,11 @@ Research for Speech techonogies relies heavily in high quality and high volume l
 
 Speech technologies relies on language resources used for training, where modern models are data-hungry For example, in SoTA automatic speech recognition and speech synthesis  systems such as Listen Attend Speell by Google \cite{Chiu2018} were trained using more than 12500 hours of spoken English. Additionally, some models require high-quality annotated data (e.g., TIMIT \cite{TIMIT}, SwitchBoard \cite{Switchboard}); however, manual annotations are typically costly and time-demanding. Despite the collective efforts for reducing the amount of annotated data (e.g., semi-supervised models \cite{AmazonSemiSupervised}, or unsupervised models \cite{ZeroResources}), those approaches require great amount of unannotated data instead. These drawbacks become more evident for languages different than English. Even for Spanish, one of the most spoken language in the world \cite{HernndezMena2017}, the resources are limited in size and variety, especially for annotated corpora.
 
+Compared to the English language availability of open resurces are limited, examples of heavily used English corpora used as base line for research is deeply observed in literature, corpora like TIMIT \cite{TIMIT}, Switchboard \cite{Switchboard} or Fisher \cite{Fisher}, has provide enough infraestructure to support research that for years and even now guide state of the art development in Speech Recognition and Speech Synthesis. Those corpus previusly mentioned contains not only phonetic information but dialectical variability, allowing to create more robust systems.
 
+Availability of corpora to research in Speech Recognition is a fundamental key in advances in prototypes and new development of algorithms and techniques and comparing resources of the top five spoken languages in the world searching in the two of the recognized catalogs for language resources, it can be observed that the difference in resources is huge. 
 
-% Something that is missing is why to focus on Spanish resources, if you have English resources. Here I suggest a way to do it. You might adjust. 
-% Explain why is necessary to study the corpora available before developing a model (a sentence). Then talk about the dialectical variability and the impact of such into the use of speech technology (look for papers that explore this idea, probably multidisciplinary studies). Then provide some arguments why the spanish community should have a benchmark to compare their models. Now introduce what this review will be about, the contribution of the work, and what are the main aspects to be discussed throughout the review. 
-
-% The introduction should provide an overview of the problem to be discussed in the paper, what is the current state-of-the-art and in this case, the aspects to be evaluated in the review. References are needed, specially in this section! 
-
-\section{Preamble}
-% overrepresentation of English
-Table \ref{tab:resources_by_langauge} shows the amount of resources published by the Linguistic Data Consortium LDC and European Language Resources Association ELRA, noting the difference in availability of resourcer for the top 5 spoken languages in the world. This resources are both open sourced and licenced.
+Table \ref{tab:resources_by_langauge} shows the amount of resources published by the Linguistic Data Consortium LDC and European Language Resources Association ELRA, showing that published English resources has more 5 times more representation than Mandarin and Spanish.
 
 
 \begin{table}[h]
@@ -75,15 +70,18 @@ Rank & Language & LDC & ELRA \\
 \end{tabular}
 \end{table}
 
+
+In this article we show a reeview of the open source resources for Speech Technologies for the Spanish language, using criteria of visibility, availability and impact, understanding that there are other resources crafted in previous research but the visibility, availability or impact are limited.
+
 \section{Open Resources for the Spanish Language}
 
-Language Resources for the Spanish languages focused on speech technologies with open licenses and openly distributed over the web are mentioned in this section. A summary is presented in Table \ref{tab:open_source_spanish_corpus}
+Language Resources for the Spanish languages focused on speech technologies with open licenses and openly distributed over the web are mentioned in this section. A summary is presented in Table \ref{tab:open_source_spanish_corpus} sorted by publishing date and showing important features of the dataset as the Licence of distribution, Annotation Level of the text transcription, Lenght of duration, Recording conditions of the recordings, the Spanish Dialect, the source of the speech recording and its publising date.
 
 \begin{table*}[ht]
 \caption{List of Open Source Spanish Corpora}
 \label{tab:open_source_spanish_corpus}
 \begin{tabular}{llllllll}
-\textbf{Resource name} & \textbf{Licence}  & \multicolumn{1}{p{2cm}}{\textbf{Annotation Level}} & \textbf{Length} & \multicolumn{1}{p{2cm}}{\textbf{Recording Conditions}} & \textbf{Accents} & \textbf{Source} &  \multicolumn{1}{p{2cm}}{\textbf{Publishing Date}}\\
+\textbf{Resource name} & \textbf{Licence}  & \multicolumn{1}{p{2cm}}{\textbf{Annotation Level}} & \textbf{Length} & \multicolumn{1}{p{2cm}}{\textbf{Recording Conditions}} & \textbf{Dialect} & \textbf{Source} &  \multicolumn{1}{p{2cm}}{\textbf{Publishing Date}}\\
 
 {DIMEx100}  & \multicolumn{1}{p{2cm}}
             {Free for Academic Purposes}        & {Phonetic} & {5h} & {Studio} & {Mexican}                       & {Internet} & 2004 \\
