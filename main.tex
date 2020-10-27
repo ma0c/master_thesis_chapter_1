@@ -147,7 +147,7 @@ Heroico and USMA corpora combined has 13 hours of audio, and part of the corpora
 
 \subsection{CIEMPIESS Project}
 
- The CIEMPIESS project isn't limited to corpora creation but to research in speech techologies applied to the Spanish Language. For corpora annotation, the CIEMPIESS project uses undergraduate students to perform manual annotation, as part of a requirement to receive a diploma. All segmentation and annotation is performed using open source tools and final corpus distributed under open licences. This project has published several corpus over the years, including the original CIEMPIESS corpus \cite{CIEMPIESS}, CIEMPIESS Light \cite{CIEMPIESS-LIGHT}, CIEMPIESS Balance \cite{CIEMPIESS-BALANCE}, CIEMPIESS Experimentation \cite{CIEMPIESS-Experimentation} and LibriVoxSpanish \cite{LibriVox-Spanish} which will be described below.
+ The Corpus de Investigación en Español de México del Posgrado de Ingeniería Eléctrica y Servicio Social from the Universidad Nacional Autonoma de Mexico CIEMPIES-UNAM is a project started on 2012 aiming to develop and share free and open-source tools for speech procesing in the Spanish Language   project isn't limited to corpora creation but to research in speech techologies applied to the Spanish Language \cite{CIEMPIESS-Webpage}. For corpora annotation, the CIEMPIESS project uses undergraduate students to perform manual annotation, as part of a requirement to receive a diploma. All segmentation and annotation is performed using open source tools and final corpus distributed under open licences. This project has published several corpus over the years, including the original CIEMPIESS corpus \cite{CIEMPIESS}, CIEMPIESS Light \cite{CIEMPIESS-LIGHT}, CIEMPIESS Balance \cite{CIEMPIESS-BALANCE}, CIEMPIESS Experimentation \cite{CIEMPIESS-Experimentation} and LibriVoxSpanish \cite{LibriVox-Spanish} which will be described below.
 
 \subsubsection{CIEMPIESS}
 
@@ -155,39 +155,40 @@ The Corpus de Investigación en Español de México del Posgrado de Ingeniería 
 
 \subsubsection{CIEMPIESS Light}
 
-After two years of experimentation with the CIEMPIESS Corpus, a lot of feedback was received by the CIEMPIESS team and a newly version of the original corpus was released, changing the distribution format from SPH files to WAV files, also modifying some recordings and adding almost a new hour of audio. This new distribution is compatible with modern ASR tools like Kaldi and CMU Sphinx
+CIEMPIES Light was published after two years of experimentation with the CIEMPIESS Corpus, a lot of feedback was received by the CIEMPIESS team and a newly version of the original corpus was released, changing the distribution format from SPH files to WAV files, also modifying some recordings and adding almost a new hour of audio. This new distribution is compatible with modern ASR tools like Kaldi and CMU Sphinx. Most of the original recordings were kept but others were replaced. This corpus has almost 1 hour plus of recordings.
+
+This corpus can be consideer as a version two of the original CIEMPIESS corpus, but improved to work with modern ASR systems; and without using any phonetic transcription, also recordings are discrimited by genre and speaker. This corpus include recordings from 53 male speakers and 34 female speakers. Each speaker is identified by a prefix indicating the genre M for male and F for female and a consecutive number.
 
 \subsubsection{CIEMPIESS Balance}
 
-Since the CIEMPIESS corpus is gender unbalanced, a newly created corpus from the same source was created to balance the CIEMPIESS LIGHT corpus to have together a combined gender balanced corpus. This corpus is composed by 18 hours and 20 minutes where 12 hours and 40 seconds are from female speakers and 5 hours and 40 minutes are from male speakers
+Since the CIEMPIESS corpus is gender unbalanced, a newly created corpus from the same source was created to balance the CIEMPIESS LIGHT corpus to have together a combined gender balanced corpus. This corpus is composed by 18 hours and 20 minutes where 12 hours and 40 seconds are from female speakers and 5 hours and 40 minutes are from male speakers.
+
+Distribution of this corpus is similar to the CIEMPIES Light corpus, where recordings are stored in WAV format and discrimiated by genre and, as this corpus is a counter part for the CIEMPIESS Light corpus, the CIEMPIES Balance corpus has 53 Female Speakers and 34 Male speakers, identified by a prefix indicating the genre M for male and F for female and a consecutive number. The recording duration lenght for each speaker in the CIEMPIESS Light corpus is similar to the counter part of the opposite gender in the CIEMPIESS Balance Corpus.
+
+The usage of this corpus is encouraged to be used together with the CIEMPIESS Light corpus to have a longer corpus gender balanced of almost 36 hours of continous speech.
 
 \subsubsection{CIEMPIESS Experimentation}
 
-CIEMPIES Experimentation are a set of three corpora designed for specific reasons, CIEMPIESS EXPERIMENTATION - COMPLEMENTARY is a phonetically balanced corpus for isolated words containing one hour of audio annotated using MEXBET
+CIEMPIES Experimentation are a set of three corpus ditributed a single one, with corpus for phonetically balance allophones for the Mexican Spanish, corpus with only female speakers and a having a standar test corpora.
 
-CIEMPIESS EXPERIMENTATION - FEM is a corpus with onle female speakers, containing 13 hours and 54 minutes of recordings
+CIEMPIESS EXPERIMENTATION - COMPLEMENTARY is a phonetically balanced corpus for isolated words containing one hour of audio annotated using MEXBET 29 and MEXBET 66 two phonetic annotations that consideer different allophones for the Spanish Language. This corpus contains recordings from 10 male speakers and 10 female speakers and was created to improve speech recognition engines that didn't find occurrences of specific allophones when training acoustic models
 
-CIEMPIES EXPERIMENTATION - TEST is a gender balanced corpus designed to test speech applications, having a total of 8 hours and 8 minutes from recorddings by 10 felame speakers and 10 male speakers 4 hours and 4 minutes each
+CIEMPIESS EXPERIMENTATION - FEM is a corpus with onle female speakers, containing 13 hours and 54 minutes of recordings, 16 of the female speakers in the corpus are native Mexican speakers and 5 more are other spanish dialects, including Venezuelan, Argentinian, Spanish from El Salvador, Spanish from Dominician republic and other dialects classified as unknown
+
+CIEMPIES EXPERIMENTATION - TEST is a gender balanced corpus designed to test speech applications, having a total of 8 hours and 8 minutes from recorddings by 10 female speakers and 10 male speakers 4 hours and 4 minutes each
 
 \subsubsection{Librivox Spanish}
 
-Livrivox Spanish si a spanish corpus based on open recordings uploaded to the Librivox site, all audiobooks in the public domain and part of the Guttenberg Project or released to the public domain.
+Livrivox Spanish is a spanish corpus based on open recordings uploaded to the Librivox site \cite{LibriVox}, all audiobooks in the public domain and part of the Guttenberg Project \cite{gutenberg} or released to the public domain. Corpus was annotated manually by under graduate students as part of their requirement of social service at the Universidad Nacional Autonoma de Mexico, has a total of 73 hours of audio, gender balanced with 60 hours from native spanish speakers and the rest from non-native speakers. As this corpus is crowsourced, recordings have different quality, in most cases recordings were made in a quiet environment and using regular computer microphones.
 
-Corpus was annotated manually by under graduate students as part of their requirement of social service at the Universidad Nacional Autonoma de Mexico, has a total of 73 hours of audio, gender balanced with 60 hours from native spanish speakers
-and the rest from non-native speakers.
-
-As this corpus is crowsourced, recordings have different quality, in most cases recordings were made in a quiet environment and using regular computer microphones
+As this corpus is manually annotated and original audio recordings are in the public domain, the corpus itself can be used as testing corpus for automatic segmentation for the original recordings.
 
 
 \subsection{M-AILABS}
 
-The M-AILABS Speech Dataset is a spoken corpus created by Imdat Solak using openly available resources from LibriVox and Project Guttemberg.
+The M-AILABS Speech Dataset is a spoken corpus created by Imdat Solak using openly available resources from LibriVox and Project Guttemberg. The corpus was multilingual, including German, US English and British English, Spanish, Italian, Ukranian Russian, French and Polish.
 
-The corpus was multilingual, including German, US English and British English, Spanish, Italian, Ukranian Russian, French and Polish.
-
-Spanish subcorpus is 108 hours long and recorded splitted three subcorpus, a 10 hours female corpus, recorded by a female mexican speaker a 72 hours male corpus, recorded by an argentinian and a spanish speaker and  25 hours mixed corpus, recorded by several unidentified speakers
-
-All recordings were captured using desktop devices.
+Spanish subcorpus is 108 hours long and recorded splitted three subcorpus, a 10 hours female corpus, recorded by a female mexican speaker a 72 hours male corpus, recorded by an argentinian and a spanish speaker and  25 hours mixed corpus, recorded by several unidentified speakers. All recordings included in this corpus also belong to the LibriVox project.
 
 To annotate at utterance level the source librivox recordings an automatic script to segmentate chapters were used, then a Speech To Text online service were used to give an annotation for the signal, later source text were compared with annotation for the signal provide by the online service and a manual verifation were performed to discard the audio or adapt the annotation to the signal.
 
@@ -217,7 +218,21 @@ Quality of recordings is good, but since different conditions are present on eac
 
 \section{Applications}
 
+Open sourced corpora mentioned in previous chapter for the Spanish Language provides resources to work in speech technologies
+
 \section{Conclusions}
+
+Annotated spoken corpora are an integral part of the Speech Technologies research.
+
+Corpus creation for the Spanish language has gained popularity the last decade, having the most amount of data published the last years, showing that is still an open research question for investigators.
+
+Corpus design for specific tasks is very valuable for speech research.
+
+Dialectical segmentation and dialectical balance are importante features to consideer when creating spoken corpora.
+
+Gathering quality signals for corpus creation is costly and scientific community is using crow-sourcing to create and validate large amount of data to be used in research
+
+\section{References}
 
 \bibliography{references_chapter_1.bib}
 \bibliographystyle{plain}
