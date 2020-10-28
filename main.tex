@@ -181,7 +181,7 @@ CIEMPIES EXPERIMENTATION - TEST is a gender balanced corpus designed to test spe
 
 Livrivox Spanish is a spanish corpus based on open recordings uploaded to the Librivox site \cite{LibriVox}, all audiobooks in the public domain and part of the Guttenberg Project \cite{gutenberg} or released to the public domain. Corpus was annotated manually by under graduate students as part of their requirement of social service at the Universidad Nacional Autonoma de Mexico, has a total of 73 hours of audio, gender balanced with 60 hours from native spanish speakers and the rest from non-native speakers. As this corpus is crowsourced, recordings have different quality, in most cases recordings were made in a quiet environment and using regular computer microphones.
 
-As this corpus is manually annotated and original audio recordings are in the public domain, the corpus itself can be used as testing corpus for automatic segmentation for the original recordings.
+As this corpus is manually annotated and original audio recordings are in the public domain, the corpus itself can be used as testing corpus for automatic segmentation for the original recordings. Also the corpus has speakers with different dialects which make its appropriate to create speaker independant speech recognition systems.
 
 
 \subsection{M-AILABS}
@@ -192,33 +192,27 @@ Spanish subcorpus is 108 hours long and recorded splitted three subcorpus, a 10 
 
 To annotate at utterance level the source librivox recordings an automatic script to segmentate chapters were used, then a Speech To Text online service were used to give an annotation for the signal, later source text were compared with annotation for the signal provide by the online service and a manual verifation were performed to discard the audio or adapt the annotation to the signal.
 
+M-AILABS corpus also have different dialects for Spanish Language and was originally designed to improve Automatic Speech Recognition Systems \cite{M-AILABS}
+
 \subsection{Google TTS Latin American}
 
-The Crowdsourcing Latin American Spanish for Low-Resource Text-to-Speech corpus was created by Google Research and Laboratoire de Sciences Cognitives et Psycholinguistique and Graduate School of Engineering, The University of Tokyo. The corpus was designed to have a high quality multi-dialect corpora for latin american text to speech systems.
+The Crowdsourcing Latin American Spanish for Low-Resource Text-to-Speech corpus was created by Google Research and Laboratoire de Sciences Cognitives et Psycholinguistique and Graduate School of Engineering, The University of Tokyo. The corpus was designed to have a high quality multi-dialect corpora for latin american text to speech systems. This corpus includes 6 sub corpus for Argentinian, Chilean, Colombian, Peruvian, Puerto Rican and Venezuelan dialects, and a total of 174 Speakers and 37.7 hours of audio. Sentences were selected based on a conversational system for Mexican Spanish but later was adapted removing any Mexican Spanish specific sentences. Sentences were adapted to each particular dialect and only 30 were kept as canonical.
 
-This corpus includes 6 sub corpus for Argentinian, Chilean, Colombian, Peruvian, Puerto Rican and Venezuelan dialects, and a total of 174 Speakers and 37.7 hours of audio.
-
-Sentences were selected based on a conversational system for Mexican Spanish but later was adapted removing any Mexican Spanish specific sentences. Sentences were adapted to each particular dialect and only 30 were kept as canonical.
-
-Recordings were made in a portable vocal booth with a condenser microphone \cite{googleTTSLatinAmericanSpanishCorpus}
+Recordings were made in a portable vocal booth with a condenser microphone in a close to silence environment. This corpora was designed to create Speech Synthesis Systems for various latin american Spanish Dialects \cite{googleTTSLatinAmericanSpanishCorpus}
 
 
 
 \subsection{Common Voice}
 
-Mozilla software foundation, created in mid 2017 a crowdsourcing voice collecting platform to gather speech resources to create models for its Deep Speech Project, based on the Baido Deep Speech \cite{deepspeeh} proposal.
-
-Using a web platform, users record short phrases and also validate other recordings, having a increasing amount of recordings. Last release was 5.1 and included  54 languages.
+Mozilla software foundation, created in mid 2017 a crowdsourcing voice collecting platform to gather speech resources to create models for its Deep Speech Project, based on the Baido Deep Speech \cite{deepspeeh} proposal. Using a web platform, users record short phrases and also validate other recordings, having a increasing amount of recordings. Last release was 5.1 and included  54 languages, including English, Kinyarwanda, German, French, Catalan and Cabilio with more than 500 hours, Spanish, Persian Italian, Russian, Polish with over 100 hours and the remaining languages under 100 hours.
 
 The Spanish dataset is composed of 521 hours of recordings and 290 validated recordings.
 
-Quality of recordings is good, but since different conditions are present on each speaker, recordings aren't homogeneous.
-
-
+As the corpus is growing day by day, and validations are performed by the samee community, errors may be present on the corpora, and different speech conditions as well. The idea of this corpus is to create a large vocabulary, multiple speaker corpora to feed data hungry models for speech recognition.
 
 \section{Applications}
 
-Open sourced corpora mentioned in previous chapter for the Spanish Language provides resources to work in speech technologies
+Open sourced corpora mentioned in previous chapter for the Spanish Language provides resources to work in speech technologies, some of the corpora designed with specific usage from design and others
 
 \section{Conclusions}
 
